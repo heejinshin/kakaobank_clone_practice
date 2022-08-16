@@ -6,7 +6,7 @@ class CatalogAllianceCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal:10, vertical: 20),
+      padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 20),
       child: Column(
         children: [
           Container(
@@ -15,7 +15,7 @@ class CatalogAllianceCard extends StatelessWidget {
               children: [
                 Text(
                   'Alliance',
-                  style: TextStyle (
+                  style: TextStyle(
                     fontWeight: FontWeight.bold,
                     color: Colors.black,
                     fontSize: 18,
@@ -29,32 +29,60 @@ class CatalogAllianceCard extends StatelessWidget {
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.start,
-              children: [
-                Text(
-                  'My Credit Imformation',
-                  style: Textstyle(
-                    fontWeight: FontWeight.bold,
-                  ),
+            children: [
+              Text(
+                'My Credit Imformation',
+                style: TextStyle(
+                  fontWeight: FontWeight.bold,
                 ),
-                SizedBox(
-                  height: 5,
+              ),
+              SizedBox(
+                height: 5,
+              ),
+              Text(
+                "Secure and easy my credit information",
+                style: TextStyle(
+                  color: Colors.black.withOpacity(0.6),
+                  fontWeight: FontWeight.w500,
                 ),
-                Text(
-                  "Secure and easy my credit information",
-                  style:  TextStyle(
-                    color: Colors.black.withOpacity(0.6),
-                    fontWeight: FontWeight.w500,
-                  ),
-                )
-              ],
+              )
+            ],
           ),
           Icon(Icons.keyboard_arrow_right),
+          Divider(
+            height: 30,
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Expanded(
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Text("My Credit Information",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    SizedBox(
+                      height: 5,
+                    ),
+                    Text(
+                      "Secure and easy my credit information",
+                      style: TextStyle(
+                        color: Colors.black.withOpacity(0.6),
+                        fontWeight: FontWeight.w500,
+                      ),
+                    )
+                  ],
+                ),
+              ),
+              Icon(Icons.keyboard_arrow_right),
+            ],
+          ),
         ],
       ),
-      Divider(
-        height: 30,
-      ),
-
     );
   }
 }
+
