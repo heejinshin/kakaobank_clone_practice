@@ -25,23 +25,23 @@ class MainPage extends StatelessWidget {
               slivers: [
                 SliverAppBar(
                   titleSpacing: 10,
-                  title: MainAppBar(),
+                  // title: MainAppBar(),
                   backgroundColor: Color(0xff343B57),
                   pinned: true,
                 ),
                 SliverList(
                   delegate: SliverChildListDelegate([
                     SizedBox(height: 20),
-                    MainAdCard(
-                      title: "Puzzleleaf Youtube",
-                      content: "If you want to see the FLutter video!",
-                    ),
+                    // // MainAdCard(
+                    //   title: "Puzzleleaf Youtube",
+                    //   content: "If you want to see the FLutter video!",
+                    // ),
                     SizedBox(height: 15),
                     CheckingAccountCard(),
                     SizedBox(height: 15),
-                    SavingAccountCard(
-                      color: Color(0xffF1A8AF),
-                    ),
+                    // SavingAccountCard(
+                    //   color: Color(0xffF1A8AF),
+                    // ),
                   ]),
                 )
               ],

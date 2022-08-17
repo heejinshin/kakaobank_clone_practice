@@ -86,11 +86,13 @@ class HomePage extends StatelessWidget {
       case 0:
       return MainPage();
       case 1:
-      return CatalogPage();
+      // return CatalogPage();
       case 2:
-      return NotificationPage();
+      // return NotificationPage();
       case 3:
-      return MorePage();
+      // return MorePage();
+        default: //this
+          return Text("default");
     }
   }
 }
