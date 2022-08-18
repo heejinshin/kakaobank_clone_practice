@@ -8,8 +8,12 @@ import 'package:kakaobank_clone_practice/presentation/main/main_page.dart';
 // import 'package:kakaobank_clone_practice/presentation/more/';
 // import 'package:kakaobank_clone_practice/presentation/notification/';
 
+
+//HomePage 에서 context로 bloc을 참조한다. 이로써 쉽게 state 변경을 할 수가 있다.
+// State가 변경되는 경우 BlocBuilder에서 변경된 State 값이 전달 된다.
+
 class HomePage extends StatelessWidget {
-  bool shouldPop = true;
+  bool shouldPop = true;   // WillPopScope(onWillPop{})에서 오류가 나서 넣어준 데이터
 
   @override
   Widget build(BuildContext context) {

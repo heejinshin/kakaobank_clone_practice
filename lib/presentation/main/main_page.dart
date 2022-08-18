@@ -4,6 +4,7 @@ import 'package:kakaobank_clone_practice/presentation/main/components/checking_a
 import 'package:kakaobank_clone_practice/presentation/main/components/main_ad_card.dart';
 import 'package:kakaobank_clone_practice/presentation/main/components/main_app_bar.dart';
 import 'package:kakaobank_clone_practice/presentation/main/components/more_button.dart';
+import 'package:kakaobank_clone_practice/presentation/main/components/savings.account_card.dart';
 
 class MainPage extends StatelessWidget {
 
@@ -20,8 +21,8 @@ class MainPage extends StatelessWidget {
             constraints: BoxConstraints(
               maxWidth: 632,
             ),
-            child: CustomScrollView(
-              key: PageStorageKey<String>("main"),
+            child: CustomScrollView(   // SliverList 아이템을 스크롤해도 SliverAppBar를 상단에 고정하는 목적으로 사용한다.
+              key: PageStorageKey<String>("main"),  // 다른 화면으로 이동했다가 돌아왔을때 현재 화면의 스크롤 위치를 유지시킴
               slivers: [
                 SliverAppBar(
                   titleSpacing: 10,
@@ -32,16 +33,17 @@ class MainPage extends StatelessWidget {
                 SliverList(
                   delegate: SliverChildListDelegate([
                     SizedBox(height: 20),
-                    // // MainAdCard(
-                    //   title: "Puzzleleaf Youtube",
-                    //   content: "If you want to see the FLutter video!",
-                    // ),
+                    MainAdCard(
+                      title: "Puzzleleaf Youtube",
+                      content: "If you want to see the FLutter video!",
+                    ),
                     SizedBox(height: 15),
                     CheckingAccountCard(),
                     SizedBox(height: 15),
-                    // SavingAccountCard(
-                    //   color: Color(0xffF1A8AF),
-                    // ),
+                    SavingAccountCard(
+                      color: Color(0xffF1A8AF), key: ValueKey<String>('sd'),
+
+                    ),
                   ]),
                 )
               ],
