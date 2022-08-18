@@ -26,7 +26,7 @@ class MainPage extends StatelessWidget {
               slivers: [
                 SliverAppBar(
                   titleSpacing: 10,
-                  // title: MainAppBar(),
+                  title: MainAppBar(),
                   backgroundColor: Color(0xff343B57),
                   pinned: true,
                 ),
@@ -41,9 +41,22 @@ class MainPage extends StatelessWidget {
                     CheckingAccountCard(),
                     SizedBox(height: 15),
                     SavingAccountCard(
-                      color: Color(0xffF1A8AF), key: ValueKey<String>('sd'),
-
+                      color: Color(0xffF1A8AF),
+                      key: ValueKey<String>('sd'),
                     ),
+                    SizedBox(height: 15),
+                    SavingAccountCard(
+                        key: ValueKey<String>('sd'),
+                        color: Color(0xffD16562),
+                    ),
+                    SizedBox(height: 15),
+                    SavingAccountCard(
+                        key: ValueKey<String>('sd'),
+                        color: Color(0xffDD836),
+                    ),
+                    SizedBox(height: 15),
+                    MoreButton(),
+                    SizedBox(height: 50),
                   ]),
                 )
               ],

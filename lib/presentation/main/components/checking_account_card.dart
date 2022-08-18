@@ -39,13 +39,53 @@ class CheckingAccountCard extends StatelessWidget {
                         SizedBox(
                           height: 5.0,
                         ),
-                        Text('12')
+                        Text('1234-57-0817920',
+                        style: TextStyle(
+                          fontSize: 11,
+                          color: Colors.black.withOpacity(0.4),
+                        ),
+                        )
                       ],
+                    ),
+                    Icon(
+                        Icons.more_vert,
+                        size: 25,
+                      color: Colors.black.withOpacity(0.4),
+                        )
+                  ],
+                ),
+                Text(
+                  "\$ 1,234,567",
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    fontSize: 25,
+                    color: Colors.black,
+                  ),
+                ),
+                Row(
+                  children: [
+                    Expanded(
+                      child: Text(
+                        "Transfer",
+                        textAlign: TextAlign.center,
+                      ),
+                    ),
+                    Text(
+                      "|",
+                      style: TextStyle(
+                        color: Color(0xffD8C441),
+                      ),
+                    ),
+                    Expanded(
+                      child: Text(
+                         "details",
+                        textAlign: TextAlign.center,
+                      ),
                     )
                   ],
-                )
+                ),
               ],
-            )
+            ),
           ],
         ),
       ),

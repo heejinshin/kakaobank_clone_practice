@@ -5,7 +5,7 @@ import 'package:kakaobank_clone_practice/presentation/catalog/components/catalog
 import 'package:kakaobank_clone_practice/presentation/catalog/components/catalog_ad_card.dart';
 import 'package:kakaobank_clone_practice/presentation/catalog/components/catalog_alliance_card.dart';
 import 'package:kakaobank_clone_practice/presentation/main/main_page.dart';
-// import 'package:kakaobank_clone_practice/presentation/more/';
+// import 'package:kakaobank_clone_practice/presentation/more/more';
 // import 'package:kakaobank_clone_practice/presentation/notification/';
 
 
